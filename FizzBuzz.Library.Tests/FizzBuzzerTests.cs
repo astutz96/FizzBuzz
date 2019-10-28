@@ -10,7 +10,7 @@ namespace FizzBuzz.Library.Tests
         {
             //Arrange
             int input = 1;
-            
+
             //Act
             string output = FizzBuzzer.GetValue(input);
 
@@ -24,6 +24,14 @@ namespace FizzBuzz.Library.Tests
             int input = 2;
             string output = FizzBuzzer.GetValue(input);
             Assert.AreEqual("2", output);
+        }
+
+        [Test]
+        public void Buzzer_When3_ReturnsFizz()
+        {
+            int input = 3;
+            string output = FizzBuzzer.GetValue(input);
+            Assert.AreEqual("Fizz", output);
         }
     }
 }

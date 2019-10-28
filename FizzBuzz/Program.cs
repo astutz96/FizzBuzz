@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FizzBuzz.Library;
+using System;
 
 namespace FizzBuzz
 {
@@ -17,9 +18,9 @@ namespace FizzBuzz
     {
         static void Main(string[] args)
         {
-           for (int i = 0; i <= 100; i++)
+           for (int i = 1; i <= 100; i++)
             {
-                Console.WriteLine(i);
+                Console.WriteLine(FizzBuzzer.GetValue(i));
             }
             Console.ReadLine();
         }

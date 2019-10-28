@@ -6,9 +6,16 @@ namespace FizzBuzz.Library.Tests
     {
 
         [Test]
-        public void SampleTest()
+        public void Buzzer_When1_Returns1()
         {
-            Assert.Pass();
+            //Arrange
+            int input = 1;
+            
+            //Act
+            string output = FizzBuzzer.GetValue(input);
+
+            //Assert
+            Assert.AreEqual(1, output);
         }
     }
 }

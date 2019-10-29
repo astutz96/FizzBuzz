@@ -8,13 +8,23 @@ namespace FizzBuzz.Library
         {
             string output = string.Empty;
 
-            if (input % 3 == 0)
+            if (IsDivisibleBy3(input))
                 output += "Fizz";
-            if (input % 5 == 0)
+            if (IsDivisibleBy5(input))
                 output += "Buzz";
             if (string.IsNullOrEmpty(output))
                 output = input.ToString();
             return output;
+        }
+
+        private static bool IsDivisibleBy3(int input)
+        {
+            return (input % 3) == 0;
+        }
+
+        private static bool IsDivisibleBy5(int input)
+        {
+            return (input % 5) == 0; 
         }
     }
 }
